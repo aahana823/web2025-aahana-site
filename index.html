@@ -21,14 +21,36 @@
         height: 100%;
         width: 100%;
         position: fixed;
-
       }
-      .box1 {
+      .bar {
         max-width: 100%;
         background-color: #ffc943;
-        padding: 31px;
+        padding: 5px;
         margin-top: 20px;
       }
+      .home {
+        width: 50px;
+        margin-left: 1170px;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+      .home:hover {
+        transform: scale(1.50);
+        transition: transform 0.3s ease;
+      }
+      .freez {
+        width: 20px;
+        margin-left: -90px;
+        margin-top: 3px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        position: absolute;
+      }
+      .freez:hover {
+        transform: scale(1.50);
+        transition: transform 0.3s ease;
+      }
+
       .hello {
         max-width: 100%;
         font-size: 120px;
@@ -64,7 +86,7 @@
         font-size: 40px;
         margin-top: 355px;
         font-family: "KG";
-        color: #FFFFFF;
+        color: #ffffff;
       }
       .aahana {
         float: right;
@@ -77,10 +99,25 @@
       .main {
         max-width: 1260px;
         display: flex;
-        border:#ffc943;
+        border: #ffc943;
+      }
+      .arrow {
+        width: 20px;
+        height: 30px;
+        rotate: -90deg;
+        margin-top: 50px;
+        margin-left: 150px;
+        animation: vertical-shaking 3s linear infinite;
+      }
+      @keyframes vertical-shaking {
+        0% { transform: translateY(0) }
+        25% { transform: translateY(5px) }
+        50% { transform: translateY(-5px) }
+        75% { transform: translateY(5px) }
+        100% { transform: translateY(0) }
       }
       .box2 {
-        background-color: #AB83FF;
+        background-color: #ab83ff;
         padding: 5px;
         margin-left: auto;
         margin-top: 8px;
@@ -93,27 +130,25 @@
       }
       ul {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         grid-auto-rows: 1fr;
         grid-gap: 1rem;
         /* grid-auto-flow: dense; */
-        grid-auto-flow:initial;
+        grid-auto-flow: initial;
       }
 
-        li:nth-child(4),
-        li:nth-child(5),
-        li:nth-child(10){
-  grid-column: span 3;
+      li:nth-child(4),
+      li:nth-child(5),
+      li:nth-child(10) {
+        grid-column: span 3;
       }
-        li:nth-child(7),
-        li:nth-child(8)
-      {
+      li:nth-child(7),
+      li:nth-child(8) {
         grid-row: span 5;
       }
-        li:nth-child(1),
-        li:nth-child(6),
-        li:nth-child(9)
-        {
+      li:nth-child(1),
+      li:nth-child(6),
+      li:nth-child(9) {
         grid-row: span 3;
         grid-column: span 2;
       }
@@ -136,7 +171,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img2 {
@@ -144,7 +179,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img3 {
@@ -152,7 +187,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img4 {
@@ -160,7 +195,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 0px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img5 {
@@ -168,7 +203,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img6 {
@@ -176,7 +211,7 @@
         /* align-items: center; */
         margin-top: -100px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img7 {
@@ -184,7 +219,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img8 {
@@ -192,7 +227,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img9 {
@@ -200,7 +235,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img10 {
@@ -208,7 +243,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img11 {
@@ -216,7 +251,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
       .img12 {
@@ -224,7 +259,7 @@
         /* align-items: center; */
         margin-top: 5px;
         border-radius: 10px;
-        border: #FFFFFF;
+        border: #ffffff;
         /* box-sizing: border-box; */
       }
 
@@ -236,34 +271,53 @@
     </style>
   </head>
   <body>
-    <div class="box1"></div>
+    <div class="bar">
+      <div>
+      <a href="./index.html">
+        <img class="home" src="./photos/home.png" style="width: 50px" />
+      </a>
+      </div>
+      <div>
+      <a href="./about.html">
+        <img class="freez" src="./photos/Freezzz.png" />
+      </a>
+      </div>
+    </div>
     <div class="main">
       <p class="hello">Hello!</p>
 
       <a href="./about.html">
-        <img class="me" src="./photos/Untitled5.png" style="width: 140px;"/>
+        <img class="me" src="./photos/Untitled5.png" style="width: 140px" />
       </a>
+
       <p class="Heading">This</p>
       <p class="hp2">is me</p>
       <p class="aahana">Aahana</p>
+
+      <div>
+      <a href="./work.html">
+      <img class="arrow" src="./photos/arrow.png" />
+      </a>
+      </div>
+
       <div class="box2">
         <ul>
           <!-- <div class="image"> -->
-          <li><img class="cept" src="./photos/cept - 1.jpg"></li>
-          <li><img class="img2" src="./photos/img2.png"></li>
-          <li><img class="img3" src="./photos/img3.png"></li>
-          <li><img class="img4" src="./photos/img4.png"></li>
-          <li><img class="img5" src="./photos/img5.png"></li>
-          <li><img class="img6" src="./photos/img6.png"></li>
-          <li><img class="img7" src="./photos/img7.png"></li>
-          <li><img class="img8" src="./photos/img8.png"></li>
-          <li><img class="img9" src="./photos/img9.png"></li>
-          <li><img class="img10" src="./photos/img10.png"></li>
-          <li><img class="img11" src="./photos/img11.png"></li>
-          <li><img class="img12" src="./photos/img12.png"></li>
+          <li><img class="cept" src="./photos/cept - 1.jpg" /></li>
+          <li><img class="img2" src="./photos/img2.png" /></li>
+          <li><img class="img3" src="./photos/img3.png" /></li>
+          <li><img class="img4" src="./photos/img4.png" /></li>
+          <li><img class="img5" src="./photos/img5.png" /></li>
+          <li><img class="img6" src="./photos/img6.png" /></li>
+          <li><img class="img7" src="./photos/img7.png" /></li>
+          <li><img class="img8" src="./photos/img8.png" /></li>
+          <li><img class="img9" src="./photos/img9.png" /></li>
+          <li><img class="img10" src="./photos/img10.png" /></li>
+          <li><img class="img11" src="./photos/img11.png" /></li>
+          <li><img class="img12" src="./photos/img12.png" /></li>
           <!-- <li>Thirteen</li> -->
-          </div>
-      </ul>
+          <!-- </div> -->
+        </ul>
       </div>
     </div>
     <!-- <div class="box2"></div> -->

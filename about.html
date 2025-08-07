@@ -75,11 +75,14 @@
         align-items: center;
         margin-top: 30px;
         margin-left: 350px;
+        animation: swing 2s linear infinite;
       }
       .place:hover {
         /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
         box-shadow: 0 0 20px 5px #004563;
       }
+
+
       .like {
         position: absolute;
         float: right;
@@ -87,11 +90,20 @@
         margin-top: 220px;
         margin-left: 450px;
         transition: box-shadow 0.3s ease;
+        animation: swing 2s linear infinite;
       }
       .like:hover {
-        /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
         box-shadow: 0 0 20px 5px #d23d57;
       }
+
+       @keyframes swing {
+        0%   { transform: rotate(0deg); }
+        25%  { transform: rotate(3deg); }
+        50%  { transform: rotate(-3deg); }
+        75%  { transform: rotate(3deg); }
+        100% { transform: rotate(0deg); }
+      }
+
     </style>
   </head>
   <body>
@@ -111,14 +123,16 @@
         </p>
       </div>
       <img class="me" src="./photos/Untitled5.png" />
-      <div class="magnets">
+      <div class="blue">
         <img class="freez" src="./photos/Freezzz.png" />
+        <!-- <div class="magnets"> -->
         <a href="./place.html">
         <img class="place" src="./photos/place.png" />
         </a>
         <a href="./likes.html">
         <img class="like" src="./photos/likes.png" />
         </a>
+        </div>
       </div>
     </div>
   </body>
