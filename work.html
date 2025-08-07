@@ -5,16 +5,16 @@
       body {
         background-color: #d23d57;
       }
-      .bg {
+      /* .bg {
         background-color: #ab83ff;
         width: 68px;
-        /* height: -100px; */
+
         margin: 100px -2px -2px -2px;
         padding: 600px;
         margin-bottom: -100px;
         border-radius: 30px 30px 0px 0px;
         position: fixed;
-      }
+      } */
       .bar {
         max-width: 100%;
         background-color: #ffc943;
@@ -28,7 +28,7 @@
         transition: transform 0.2s;
       }
       .home:hover {
-        transform: scale(1.50);
+        transform: scale(1.5);
         transition: transform 0.3s ease;
       }
       .freez {
@@ -40,7 +40,7 @@
         position: absolute;
       }
       .freez:hover {
-        transform: scale(1.50);
+        transform: scale(1.5);
         transition: transform 0.3s ease;
       }
 
@@ -52,81 +52,91 @@
         position: absolute;
         width: 1000px;
         margin: 10%;
-
+        background-color: #ab83ff;
+      
+        margin: 100px -2px -2px -2px;
+        /* padding: 600px; */
+        margin-bottom: -100px;
+        border-radius: 30px 30px 0px 0px;
         /* border: #ffc943; */
-
       }
 
       .div1 {
-          grid-row: span 2 / span 2;
+        grid-row: span 2 / span 2;
       }
 
+      .div1 img {
+        width: 100%;
+        max-width: 200px;
+        object-fit: contain;
+        height: 100%;
+      }
       .div2 {
-          grid-row: span 4 / span 4;
+        grid-row: span 4 / span 4;
       }
 
       .div3 {
-          grid-row: span 2 / span 2;
-          grid-column-start: 1;
-          grid-row-start: 3;
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 3;
       }
 
       .div4 {
-          grid-row: span 4 / span 4;
-          grid-column-start: 1;
-          grid-row-start: 5;
+        grid-row: span 4 / span 4;
+        grid-column-start: 1;
+        grid-row-start: 5;
       }
 
       .div5 {
-          grid-row: span 3 / span 3;
-          grid-column-start: 2;
-          grid-row-start: 5;
+        grid-row: span 3 / span 3;
+        grid-column-start: 2;
+        grid-row-start: 5;
       }
 
       .div7 {
-          grid-row: span 3 / span 3;
-          grid-column-start: 3;
-          grid-row-start: 1;
+        grid-row: span 3 / span 3;
+        grid-column-start: 3;
+        grid-row-start: 1;
       }
 
       .div8 {
-          grid-row: span 2 / span 2;
-          grid-column-start: 3;
-          grid-row-start: 4;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 4;
       }
 
       .div9 {
-          grid-row: span 2 / span 2;
-          grid-column-start: 3;
-          grid-row-start: 6;
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 6;
       }
 
       .div11 {
-          grid-row: span 5 / span 5;
-          grid-column-start: 2;
-          grid-row-start: 8;
+        grid-row: span 5 / span 5;
+        grid-column-start: 2;
+        grid-row-start: 8;
       }
 
       .div12 {
-          grid-row: span 5 / span 5;
-          grid-column-start: 3;
-          grid-row-start: 8;
+        grid-row: span 5 / span 5;
+        grid-column-start: 3;
+        grid-row-start: 8;
       }
 
       .div13 {
-          grid-row: span 2 / span 2;
-          grid-row-start: 9;
+        grid-row: span 2 / span 2;
+        grid-row-start: 9;
       }
 
       .div14 {
-          grid-row: span 2 / span 2;
-          grid-row-start: 11;
+        grid-row: span 2 / span 2;
+        grid-row-start: 11;
       }
     </style>
   </head>
   <body>
     <div class="bg">
-    <!-- <div class="parent">
+      <!-- <div class="parent">
     <div class="div1">1</div>
     <div class="div2">2</div>
     <div class="div3">3</div>
@@ -145,23 +155,23 @@
       <a href="./index.html">
         <img class="home" src="./photos/home.png" style="width: 50px" />
         <a href="./about.html">
-        <img class="freez" src="./photos/Freezzz.png" />
+          <img class="freez" src="./photos/Freezzz.png" />
         </a>
       </a>
     </div>
-     <div class="parent">
-    <div class="div1">1</div>
-    <div class="div2">2</div>
-    <div class="div3">3</div>
-    <div class="div4">4</div>
-    <div class="div5">5</div>
-    <div class="div7">7</div>
-    <div class="div8">8</div>
-    <div class="div9">9</div>
-    <div class="div11">11</div>
-    <div class="div12">12</div>
-    <div class="div13">13</div>
-    <div class="div14">14</div>
-     </div>
+    <div class="parent">
+      <div class="div1"><img src="./photos/home.png" /></div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+      <div class="div4">4</div>
+      <div class="div5">5</div>
+      <div class="div7">7</div>
+      <div class="div8">8</div>
+      <div class="div9">9</div>
+      <div class="div11">11</div>
+      <div class="div12">12</div>
+      <div class="div13">13</div>
+      <div class="div14">14</div>
+    </div>
   </body>
 </html>
