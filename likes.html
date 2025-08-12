@@ -15,6 +15,7 @@
 
       body {
         background-color: #d23d57;
+        cursor: url('./photos/flower.png'), auto;
       }
       /* .bg {
         background-color: #ffc943;
@@ -67,7 +68,22 @@
           display: block;
           width: 400px;
           height: 500px;
-          padding: 10px;
+          /* padding: 10px; */
+          background: #ffffff;
+          /* border: solid 12px #aa83ff; */
+          border-radius: 12px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          text-decoration: none;
+          /* color: inherit; */
+          /* position: ; */
+      }
+      .text-card1 {
+        cursor: pointer;
+          display: block;
+          width: 400px;
+          height: 500px;
+          /* padding: 10px; */
           background: #ffffff;
           /* border: solid 12px #aa83ff; */
           border-radius: 12px;
@@ -80,7 +96,15 @@
 
       .text-card h3 {
           margin-bottom: 10px;
-          color: #ffc943;
+          color: #007c0e;
+          font-family: "Goudy Bookletter 1911";
+          font-size: 40px;
+          margin: 220px 90px;
+      }
+
+       .text-card1 h3 {
+          margin-bottom: 10px;
+          color: #007c0e;
           font-family: "Goudy Bookletter 1911";
           font-size: 40px;
           margin: 200px 50px;
@@ -92,39 +116,22 @@
           box-shadow: 0 8px 16px rgba(0,0,0,0.15);
       }
 
-      .card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: transform 0.8s ease;
-    }
+      .text-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+          background: #ab83ff;
+          transition: opacity 0.4s ease;
+          z-index: 1;
+      }
 
-    .card.flipped .card-inner {
-        transform: rotateY(180deg);
-    }
+      .text-card1:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+          background: #ffca43;
+          transition: opacity 0.4s ease;
+          z-index: 1;
+      }
 
-    .card-front, .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        color: white;
-    }
-
-    .card-front {
-        background: #ff9800;
-    }
-
-    .card-back {
-        background: #4caf50;
-        transform: rotateY(180deg);
-    }
 
 
     </style>
@@ -141,17 +148,19 @@
     </div>
 
     <div class="card-container">
-
+      <!-- <div class="portfolio"> -->
       <a href="https://aahanapatel08.wixsite.com/portfolio" class="text-card">
-        <!-- <div class="bground"> -->
+        <!-- <img class="card1" src="./photos/me.png"> -->
         <h3>PORTFOLIO</h3>
-        <!-- </div> -->
       </a>
+      <!-- </div> -->
 
-      <a href="./GREEN TO SMART - GANDHINAGAR[1].pdf" class="text-card">
+      <!-- <div class="gandhinagar"> -->
+      <a href="./GREEN TO SMART - GANDHINAGAR[1].pdf" class="text-card1">
+        <!-- <img src="./photos/gandhinagar" alt="Card 2"> -->
           <h3>GREEN CITY GANDHINAGAR</h3>
       </a>
+      <!-- </div> -->
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
