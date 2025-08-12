@@ -28,7 +28,7 @@
         transition: transform 0.2s;
       }
       .home:hover {
-        transform: scale(1.50);
+        transform: scale(1.5);
         transition: transform 0.3s ease;
       }
       .freez {
@@ -40,7 +40,7 @@
         position: absolute;
       }
       .freez:hover {
-        transform: scale(1.50);
+        transform: scale(1.5);
         transition: transform 0.3s ease;
       }
       .one {
@@ -50,12 +50,109 @@
         border-radius: 20px 20px 0px 0px;
         /* position: absolute; */
       }
+      /* .one:hover {
+        transform: scale(1.05);
+      } */
       .two {
         width: 1250px;
         height: 500px;
         margin-top: -5px;
         border-radius: 0px 0px 20px 20px;
         /* position: absolute; */
+      }
+
+      /* .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 200px;
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;
+      }
+
+      .card {
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+
+
+
+      .card img {
+        max-width: 100%;
+        border-radius: 8px;
+
+        transition: transform 0.4s ease;
+        display: block;
+      } */
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px 130px;
+      }
+
+      .card {
+        position: relative;
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        gap: 20px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: filter 0.4s ease, transform 0.4s ease;
+      }
+
+      .card-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 2;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #aa83ff6b;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: 1;
+      }
+
+      .card:hover img {
+        filter: blur(4px);
+        transform: scale(1.05);
+      }
+
+      .card:hover .card-content {
+        opacity: 1;
+      }
+
+      .card:hover::after {
+        opacity: 1;
       }
     </style>
   </head>
@@ -65,13 +162,32 @@
       <a href="./index.html">
         <img class="home" src="./photos/home.png" style="width: 50px" />
       </a>
-        <a href="./about.html">
+      <a href="./about.html">
         <img class="freez" src="./photos/Freezzz.png" />
-        </a>
+      </a>
     </div>
-      <!-- <div class="bg"> -->
-      <img class="one" src="./photos/mountain3.jpg">
-      <img class="two" src="./photos/mountain2.jpg">
-      <!-- </div> -->
+    <div class="grid">
+      <div class="card">
+        <img src="./photos/IMG_E9561.JPG" alt="Image 1" />
+        <div class="card-content">
+          <p>
+            Over the years, I've wandered through the buzzing streets of Delhi
+            and Mumbai, soaked in the sun of Goa, and stood in awe of the raw
+            beauty of Leh Ladakh and Manali. But nothing comes close to Kasol —
+            ten days of pure magic, trekking through pine-covered trails,
+            breathing crisp mountain air, and feeling like time had slowed down
+            just for me. Those days remain the best of my life, a perfect
+            reminder that the mountains will always have my heart.
+          </p>
+        </div>
+      </div>
+           <div class="card">
+            <img src="./photos/sky.jpg" alt="Image 2">
+            <div class="card-content">
+
+            <p>My travel wishlist stretches far and wide. Within India, I dream of visiting places like Spiti Valley, with its dramatic landscapes, high-altitude villages, and the stillness that only the mountains can offer — along with countless other corners of the country that hold their own magic. Beyond India, I’m drawn to the untouched beauty of New Zealand, where rolling green hills meet snow-capped peaks, and to the charm of small mountain towns where life moves slowly and the air feels fresher. I also long to wander through the villages and towns of Europe, each with its own character — cobblestone streets, local markets, centuries-old architecture, and stories whispered through every alley.</p>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
